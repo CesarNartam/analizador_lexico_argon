@@ -43,26 +43,16 @@ tokens = list(palabras_reservadas.values()) + tokens
 
 t_ignore = ' '
 
-t_suma = r'\+'
+t_aritmerica = r'\+|\-|\*|\/'
 t_asignacion = r'='
-t_resta = r'\-'
-t_division = r'/'
-t_multiplicacion = r'\*'
 
-t_igual = r'=='
-t_diferenteque = r'!='
-t_mayorque = r'>'
-t_menorque = r'<'
-t_menorigual = r'<='
-t_mayorigual = r'>='
+t_comparacion = r'> <|>=|<=|==|!='
 
 t_dospuntos = r'\:'
 t_puntocoma = r'\;'
 t_comilladoble = r'"'
-t_parentesisizq = r'\('
-t_parentesisder = r'\)'
-t_llaveizq = r'\{'
-t_llaveder = r'\}'
+t_parentesis = r'\(|\)'
+t_llaves = r'\{|\}'
 t_string = r'["""][^"""]*["""]'
 
 t_masmas = r'\+\+'

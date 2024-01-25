@@ -4,26 +4,16 @@ from tkinter import *
 tokens = [
     'variable',
     'numero',
-    'suma',
+    'aritmetica',
     'asignacion',
-    'resta',
-    'division',
-    'multiplicacion', 
 
-    'igual',
-    'diferenteque',
-    'mayorque',
-    'menorque',
-    'menorigual',
-    'mayorigual',
+    'comparacion',
 
     'dospuntos',
     'puntocoma',
     'comilladoble',
-    'parentesisizq',
-    'parentesisder',
-    'llaveizq',
-    'llaveder',
+    'parentesis',
+    'llaves',
     'string',
 
     'masmas',
@@ -43,7 +33,7 @@ tokens = list(palabras_reservadas.values()) + tokens
 
 t_ignore = ' '
 
-t_aritmerica = r'\+|\-|\*|\/'
+t_aritmetica = r'\+|\-|\*|\/'
 t_asignacion = r'='
 
 t_comparacion = r'> <|>=|<=|==|!='
